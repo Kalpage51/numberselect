@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Number Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="landing-page">
+        <h1>Welcome to the Lottery Number Selector!</h1>
+        <p>Select a number from 0 to 99. Once selected, you'll be asked to provide your details.</p>
+        <button id="start-button">Start</button>
+    </div>
+
+    <div id="number-list" style="display: none;"></div>
+
+    <div id="user-form" style="display: none;">
+        <h2>Provide Your Details</h2>
+        <form id="details-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="confirmation-message" style="display: none;"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
